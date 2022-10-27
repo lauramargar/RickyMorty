@@ -15,7 +15,7 @@ async function get_all() {
 
 get_all().then(allCharacteres=>{
     console.log(allCharacteres);
-    document.querySelector('.section').innerHTML='';
+    document.querySelector('article').innerHTML='';
     const char=allCharacteres.results;
     print(char);
   });
