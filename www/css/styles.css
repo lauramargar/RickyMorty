@@ -1,0 +1,50 @@
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 8px 7px 12px 3px rgba(0,0,0,0.6);
+    padding: 1.5rem;
+    margin: 20px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.box{
+    width: 300px;
+    height: 35px;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.button{
+    width: 75px;
+    float: left;
+    border-radius: 17px;
+}
+
+.name{
+    font-size: 20pt;
+}
+.status{
+    font-size: 15pt;
+}
