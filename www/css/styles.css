@@ -20,6 +20,15 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #27c681;
+    font-size: 20px;
+    height: 100px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #27c681;
 }
 
 .article{

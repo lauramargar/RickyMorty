@@ -26,13 +26,10 @@ async function findByPage(query) {
         if(name === null){
             name = ' ';
         }
-        //console.log(statusFilter);
         const response = await fetch('https://rickandmortyapi.com/api/character/?page='+query+'&name='+name, {});
         const data = await response.json();
         return data;
     } else {
-        //console.log('hola');
-        //console.log(statusFilter);
         filterBy();
     }
     
@@ -40,7 +37,7 @@ async function findByPage(query) {
 
 let types = new Array();
 let valores = new Array();
-let filtro = new Boolean(false);
+let filtro = false;
 
 async function filterBy(){
     filtro = true;
