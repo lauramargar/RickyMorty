@@ -7,15 +7,25 @@ section{
     margin: 20px;
 }
 main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+    "select select select"
+    "article article article"
+    "pag pag pag";
+    text-align: center;
+    margin-top: 30px;
 }
 
 header{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.article{
+    grid-area: article;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -45,6 +55,23 @@ header{
 .name{
     font-size: 20pt;
 }
+
 .status{
     font-size: 15pt;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.article_pagination{
+    grid-area: pag;
+    justify-content: center;
+}
+
+.article_select{
+    grid-area: select;
 }

@@ -12,16 +12,48 @@
 
 <body>
     <div id="output">
-        <header><h1>RICKY AND MORTY SEARCHBAR</h1></header>
+        <header><h1>RICK AND MORTY SEARCHBAR</h1></header>
         <form>
           <div class="search">
             <input id="mySearch" class="box" type="text" placeholder="Search..."/>
-            <button type="button" class="button" onclick="search_character()">Search</button>
+            <button type="button" class="button" onclick="nextPag(1)">Search</button>
           </div>
         </form>
         <main id="main">
-          <article class="article">
+          <article id="results" class="article">
 
+          </article>
+
+          <article class="article_select">
+            <label for="filter-select">Choose a specie:</label>
+            <select name="species" class="species-select" id="species-select">
+                <option value="">--Please choose an option--</option>
+                <option value="human">Human</option>
+                <option value="alien">Alien</option>
+                <option value="humanoid">Humanoid</option>
+                <option value="poopybutthole">Poopybutthole</option>
+                <option value="mytological">Mythological Creature</option>
+            </select>
+            <label for="filter-select">Choose a status:</label>
+            <select name="status" class="status-select" id="status-select">
+                <option value="">--Please choose an option--</option>
+                <option value="alive">Alive</option>
+                <option value="dead">Dead</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <button type="button" class="filter" onclick="filterBy()">Filter</button>
+          </article>
+
+          <article class="article_pagination">
+            <ul class="pagination">
+                <li><button class="pag1" onclick="nextPag(1)">1</button></li>
+                <li><button class="pag2" onclick="nextPag(2)">2</button></li>
+                <li><button class="pag3" onclick="nextPag(3)">3</button></li>
+                <li><button class="pag4" onclick="nextPag(4)">4</button></li>
+                <li><button class="pag5" onclick="nextPag(5)">5</button></li>
+                <li><button class="pag6" onclick="nextPag(6)">6</button></li>
+                <li><button class="pag7" onclick="nextPag(7)">7</button></li>
+            </ul>
           </article>
         </main>
     </div>
